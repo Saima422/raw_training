@@ -1,0 +1,93 @@
+.flex-box {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  background-color: #2b7a78;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 15%;
+  min-width: 200px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.nav-container .nav-item {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.nav-container .nav-item a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #feffff;
+}
+
+.nav-container :last-child a {
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.menu img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .menu {
+    display: unset;
+  }
+}
+
+.banner {
+  height: 60vh;
+  background-color: #def2f1;
+  color: #17252a;
+}
+
+.box {
+  border-radius: 40px;
+  background-color: #17252a;
+  height: 200px;
+  width: 80%;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=style.css.map */

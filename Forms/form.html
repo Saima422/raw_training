@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Reg Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="http://b28a35984a37.ngrok.io/submit" method="GET" enctype="application/x-www-form-urlencoded">
+        <label for="firstname">Name</label>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <!-- <label for="password">Password</label>
+        <input type=""> -->
+        <br>
+        <label for="company">Company</label>
+            <input type="radio" name="company" value="SB">Surfboard Ventures</form>
+            <input type="radio" name="company" value="CS">ContentStack</input>
+            <input type="radio" name="company" value="RE">Raw Engineering</input>
+
+        <br>
+        <label for="benefits">Benefits</label>
+            <input type="checkbox" name="benefits" value="MI">Medical Insurance</input>
+            <input type="checkbox" name="benefits" value="TI">Term Insurance</input>
+            <input type="checkbox" name="benefits" value="PI">Parental Insurance</input>
+
+        <br>
+        <label for="shift">Shifts</label>
+        <select name="shift" id="shift">
+            <option value="day" default>Day</option>
+            <option value="night">Night</option>
+            <option value="on-call">On-Call</option>
+            
+          </select>
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
